@@ -13,15 +13,13 @@ import lombok.Data;
 @Data
 public class Region {
 
-    private Integer Id;
+    private String Id;
 
-    private String proName;
+    private String name;
 
-    private String cityName;
-
-    private String areaName;
-
-    private Integer parentId;
+    private String parentId;
 
     private String seq;
+
+    private String level;
 }
