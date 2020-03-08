@@ -1,6 +1,5 @@
 package com.local.grading.interceptor;
 
-import org.springframework.http.client.support.BasicAuthenticationInterceptor;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -16,7 +15,7 @@ public class TenantWebMvcConfigurer implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(tenantContextHandlerInterceptor()).addPathPatterns("/**").excludePathPatterns("**/login").order(10);
+        registry.addInterceptor(tenantContextHandlerInterceptor()).addPathPatterns("/**").excludePathPatterns("/index.html");
         WebMvcConfigurer.super.addInterceptors(registry);
     }
 

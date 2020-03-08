@@ -10,3 +10,7 @@ spring:
 # 启动端口
 server:
   port: 8888
+# Logger Config
+logging:
+  level:
+    com.baomidou.mybatisplus.samples: debug

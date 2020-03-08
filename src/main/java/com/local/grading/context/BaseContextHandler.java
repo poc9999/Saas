@@ -1,7 +1,5 @@
 package com.local.grading.context;
 
-import java.util.Map;
-
 /**
  * @author caishen
  * @version 1.0
@@ -14,11 +12,11 @@ public class BaseContextHandler {
 
     private static final ThreadLocal<String> THREAD_LOCAL = new ThreadLocal<>();
 
-    public static void setTenant(String tenant) {
-        THREAD_LOCAL.set(tenant);
+    public static void setTenant(String tenantId) {
+        THREAD_LOCAL.set(tenantId);
     }
 
-    public static String getTenant() {
+    public static String getTenantId() {
         return THREAD_LOCAL.get();
     }
 
