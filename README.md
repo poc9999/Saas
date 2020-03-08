@@ -4,7 +4,7 @@
 ```
 请求地址:http://localhost:8888/doc.html
 ```
-![项目截图.png](docs/images/cut.png)
+![项目截图.png](https://github.com/poc9999/Saas/blob/master/docs/images/cut.PNG)
 获取租户0的所有用户
 ```
 GET /user/get?tenantId=0
