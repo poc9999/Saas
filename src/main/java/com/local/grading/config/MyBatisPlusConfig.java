@@ -23,7 +23,7 @@ import java.util.List;
  **/
 @Configuration
 @MapperScan(value = "com.local.grading.mapper")
-public class MyBatisConfig {
+public class MyBatisPlusConfig {
 
     /**
      * 多租户Id
